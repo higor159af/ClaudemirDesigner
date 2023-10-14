@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,body{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* cabecalho */
+.header-main {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background: #ff4500;
+  justify-content: space-between;
+}
+
+
+
+.logo-main{
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  margin: 0 10px;
+}
+
+/* nav cabecalho */
+.nav-header-main {
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-header-main a {
+  color: #fff;
+  margin: 10px;
+  font-weight: 700;
+  transition: 0.4s;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid #fff;
+    opacity: 0.9;
+  }
+}
+
+/* perfil */
+.profileClaudemir {
+  border-radius: 50%;
+  width: 200px;
+  padding: 5px;
+  margin: 15px;
+  border: #ff4500 2px solid;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: #fac9b7;
+  padding: 10px;
+  margin-right: auto;
+}
+
+.profile-text{
+  width: 400px;
+  margin: 5px;
+  text-align: justify;
+}
+
+/* sobre */
+
+#sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#sobre h2 {
+  color: #fc6129;
+  margin: 15px 0;
+}
+
+.apresentacao {
+  width: 600px;
+  padding: 10px;
+}
+
+.element-sobre {
+  margin: 5px 0;
+}
+
+.element-sobre h2 {
+  background: url(../img/arrow-bottom.png) no-repeat center right;
+  border: 2px solid #fc6129;
+  border-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.element-sobre .element-sobre-paragrafo {
+  text-align: justify;
+  padding: 0px;
+  overflow: hidden;
+  transition: 0.4s;
+  margin: 0px;
+  opacity: 0;
+  height: 0;
+  color: #fc6129;
+}
+
+.element-sobre.ativo .element-sobre-paragrafo {
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 0.9rem;
+  padding: 0 10px;
+  overflow: hidden;
+  opacity: 1;
+  height: auto;
+}
+
+.element-sobre ul {
+  list-style: none;
+}
+
+.element-sobre ul li {
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.element-sobre ul li:nth-child(odd) {
+  background-color: #fac9b7;
+}
+
+/* projetos */
+#projetos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projetos-text{
+  text-align: center;
+}
+
+.projects {
+  max-width: 400px;
+}
+
+.projects img {
+  margin: 5px;
+  padding: 5px;
+  width: 300px;
+  transform: scale(0.98);
+  border-radius: 10%;
+  transition: 0.4s;
+  cursor: pointer;
+  max-height: 300px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  &:hover {
+    transform: scale(1);
+    border-radius: 5%;
+    border: 2px solid #ff4500;
+  }
+}
+
+/* contato */
+
+
+#contato a {
+  color: #000;
+}
+
+#contato h2{
+  background-color: #fc6129;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#contato p {
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* desenvolvimento */
+.developed {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.developed a {
+  color: #fc6129;
+  font-weight: 700;
+}
+
+
+footer{
+  text-align: center;
+  background-color: #555;
+  padding: 20px;
+}
+
+footer strong{
+  text-align: center;
+  background-color: #555;
+  padding: 20px;
+  color: #fc6129;
+}
+
+footer .nav-footer-main {
+ display: flex;
+ flex-direction: column;
+ padding: 5px;
+}
+
+footer .nav-footer-main a{
+  color: #fff;
+  margin: 5px;&:hover{
+    opacity: .7;
+  }
+}
